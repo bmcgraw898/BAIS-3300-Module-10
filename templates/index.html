@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blaine’s Flask Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+</head>
+<body>
+    <h1>Welcome to my Flask Webpage!</h1>
+    <p>This page is using my favorite background color!</p>
+</body>
+</html>
+{% extends 'base.html' %}
+
+{% block title %}
+Welcome to my page
+{% endblock %}
+
+{% block body %}
+<main>
+    <h1>Blaine McGraw</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minus, iste ea cumque et
+        placeat non vero, veritatis quis quia minima, quod fuga! Sequi necessitatibus at ab aliquid
+        voluptatem illo.
+    </p>
+</main>
+{% endblock %}
+
